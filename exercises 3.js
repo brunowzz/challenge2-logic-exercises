@@ -4,6 +4,8 @@
 let number = Math.floor(Math.random() * 11)
 let winner = Math.floor(Math.random() * 11)
 
-let award = number === winner ? 'Parabéns o seu número foi o ganhador' : 'Infelizmente o seu número não foi o ganhador'
-
-console.log(`Seu número é ${number}, o número ganhador foi ${winner}. ${award}`)
+if(number === winner) {
+    console.log(`Você ganhou`)
+} else {
+    console.log(`Você perdeu, o número sorteado foi: ${winner} e o seu escolhido foi: ${number}`)
+}
